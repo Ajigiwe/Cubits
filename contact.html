@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cubits & Co. Interiors</title>
+    <!-- Fonts Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION HEADER -->
+    <header class="nav-bar">
+        <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Cubits & Co."></a>
+        <button class="nav-toggle" aria-label="Toggle Navigation">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- CONTACT US SECTION -->
+    <section id="contact" class="dark-section subpage-hero" style="min-height: calc(100vh - 200px); display: flex; align-items: center; justify-content: center; padding: 120px 0 60px 0;">
+        <div class="container contact-content reveal">
+            <span class="label-caps text-accent mb-4">01 / Transmission</span>
+            <h2 class="contact-title font-display">Contact Us</h2>
+            <p class="contact-tagline">Spaces Designed for Living.</p>
+            <div class="contact-details">
+                <div class="contact-line reveal delay-100">inquiries@cubitsandco.com</div>
+                <div class="contact-line reveal delay-200">+1 (212) 555-0195</div>
+                <div class="contact-line contact-line-last reveal delay-300">1440 Broadway, Suite 2300, New York, NY</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHARED FOOTER -->
+    <footer class="site-footer">
+        <div class="container site-footer-container">
+            <div class="site-footer-logo-wrap">
+                <span class="site-footer-logo"><img src="images/logo.png" alt="Cubits & Co."></span>
+                <p class="site-footer-copy">&copy; 2026 Cubits & Co. Interiors. All rights reserved.</p>
+            </div>
+            <ul class="site-footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- INTERSECTION OBSERVER FOR SCROLL REVEALS -->
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.12
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Mobile Nav Hamburger Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                document.body.classList.toggle('nav-open');
+            });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Cubits & Co. Interiors</title>
+    <!-- Fonts Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION HEADER -->
+    <header class="nav-bar">
+        <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Cubits & Co."></a>
+        <button class="nav-toggle" aria-label="Toggle Navigation">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- SERVICES SUBPAGE HERO -->
+    <section class="light-section subpage-hero" style="padding-bottom: 60px;">
+        <div class="container reveal">
+            <span class="label-caps text-accent mb-4 block">01 / Our Capabilities</span>
+            <h1 class="font-display text-5xl uppercase mb-6" style="font-weight: 300; line-height: 1.1;">Bespoke Design &amp;<br>Spatial Planning</h1>
+            <div class="gold-rule-h"></div>
+            <p style="max-width: 600px; font-size: 1.05rem; opacity: 0.8; line-height: 1.7;">From initial boundary draft to procurement schedules, we deliver pure architectural and tactile interior systems tailored to residential sanctuaries.</p>
+        </div>
+    </section>
+
+    <!-- DESIGN HIGHLIGHT SECTION -->
+    <section id="design-highlight" class="dark-section" style="padding: 0; border-top: 1px solid var(--divider);">
+        <div class="highlight-grid">
+            <div class="highlight-left reveal">
+                <img class="img-cover" src="images/hero.png" alt="Moody interior highlight">
+            </div>
+            <div class="gold-rule-v"></div>
+            <div class="highlight-content reveal delay-100">
+                <span class="label-caps text-accent mb-4">02 / Spatial Elements</span>
+                <h2 class="highlight-title font-display">Design Highlights</h2>
+                <div class="highlight-columns">
+                    <div class="highlight-col reveal delay-200">
+                        <h4>Lighting</h4>
+                        <p>Bespoke architectural fixtures designed to wash concrete surfaces and sculpt clean boundary lines across rooms.</p>
+                    </div>
+                    <div class="highlight-col reveal delay-300">
+                        <h4>Furniture</h4>
+                        <p>Low-profile, custom-crafted elements that emphasize horizontal flow and spacious structural breathing room.</p>
+                    </div>
+                    <div class="highlight-col reveal delay-400">
+                        <h4>Decoration</h4>
+                        <p>Highly curated artisanal pottery, mineral stones, and textured linen throws added to establish rich tactility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLOOR PLAN OVERVIEW SECTION -->
+    <section id="floor-plan" class="light-section" style="border-top: 1px solid rgba(26,23,20,0.1);">
+        <div class="container floor-plan-grid">
+            <div class="reveal">
+                <span class="label-caps text-accent mb-4">03 / Layout Planning</span>
+                <h2 class="floor-plan-title font-display">Floor Plan Overview</h2>
+                <p class="floor-plan-desc">Our structural planning prioritizes seamless transition vectors and sightlines. Spaces are arranged to optimize solar orientation and ensure circulation paths remain completely uninterrupted.</p>
+                <div class="floor-plan-svg-wrap reveal delay-100">
+                    <svg viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer Walls -->
+                        <rect x="10" y="10" width="480" height="280" stroke="#1A1714" stroke-width="2"/>
+                        <!-- Internal Dividers -->
+                        <line x1="220" y1="10" x2="220" y2="210" stroke="#1A1714" stroke-width="1.5"/>
+                        <line x1="220" y1="210" x2="490" y2="210" stroke="#1A1714" stroke-width="1.5"/>
+                        <line x1="10" y1="150" x2="220" y2="150" stroke="#1A1714" stroke-width="1.5"/>
+                        <line x1="350" y1="210" x2="350" y2="290" stroke="#1A1714" stroke-width="1.5"/>
+                        <!-- Room Titles -->
+                        <text x="115" y="85" fill="#1A1714" font-family="Jost" font-size="12" font-weight="500" letter-spacing="0.1em" text-anchor="middle">LIVING AREA</text>
+                        <text x="115" y="225" fill="#1A1714" font-family="Jost" font-size="12" font-weight="500" letter-spacing="0.1em" text-anchor="middle">MASTER SUITE</text>
+                        <text x="355" y="115" fill="#1A1714" font-family="Jost" font-size="12" font-weight="500" letter-spacing="0.1em" text-anchor="middle">KITCHEN / DINING</text>
+                        <text x="285" y="255" fill="#1A1714" font-family="Jost" font-size="10" font-weight="500" letter-spacing="0.1em" text-anchor="middle">BATH</text>
+                        <text x="420" y="255" fill="#1A1714" font-family="Jost" font-size="10" font-weight="500" letter-spacing="0.1em" text-anchor="middle">TERRACE</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="floor-plan-right reveal delay-200">
+                <span class="label-caps text-accent mb-6 block">Material Tactility</span>
+                <div class="swatch-3col">
+                    <div class="material-card">
+                        <div class="material-thumb"><img src="images/detail.png" style="width: 100%; height: 100%;" alt="Travertine"></div>
+                        <div class="material-meta">
+                            <span class="material-name">Travertine</span>
+                            <span class="material-type">Stone</span>
+                        </div>
+                    </div>
+                    <div class="material-card">
+                        <div class="material-thumb"><img src="images/detail.png" style="width: 100%; height: 100%;" alt="Smoked Oak"></div>
+                        <div class="material-meta">
+                            <span class="material-name">Smoked Oak</span>
+                            <span class="material-type">Wood</span>
+                        </div>
+                    </div>
+                    <div class="material-card">
+                        <div class="material-thumb"><img src="images/detail.png" style="width: 100%; height: 100%;" alt="Raw Bouclé"></div>
+                        <div class="material-meta">
+                            <span class="material-name">Raw Bouclé</span>
+                            <span class="material-type">Fabric</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE NEXT STEP SECTION -->
+    <section id="next-step" class="light-section" style="border-top: 1px solid rgba(26,23,20,0.1);">
+        <div class="container next-step-grid">
+            <div class="next-step-left reveal">
+                <span class="label-caps text-accent mb-4">04 / Implementation</span>
+                <h2 class="next-step-title font-display">The Next Step</h2>
+                <div class="checklist">
+                    <div class="checklist-item reveal delay-100">
+                        <span class="checklist-icon">✓</span>
+                        <p class="checklist-text"><strong>Structural Consultation</strong><br>Conducting an on-site spatial assessment to verify exact dimensions and boundary parameters.</p>
+                    </div>
+                    <div class="checklist-item reveal delay-200">
+                        <span class="checklist-icon">✓</span>
+                        <p class="checklist-text"><strong>Material Finalization</strong><br>Reviewing raw samples of smoked oak, travertine, and zellige tiles under natural site lighting conditions.</p>
+                    </div>
+                    <div class="checklist-item reveal delay-300">
+                        <span class="checklist-icon">✓</span>
+                        <p class="checklist-text"><strong>Millwork Blueprints</strong><br>Finalizing architectural drawings and construction tolerances for the floating bedside cabinets and storage.</p>
+                    </div>
+                    <div class="checklist-item reveal delay-400">
+                        <span class="checklist-icon">✓</span>
+                        <p class="checklist-text"><strong>Procurement Initiation</strong><br>Transmitting formal acquisition orders for the curated furniture schedule and materials.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="next-step-right reveal delay-200">
+                <img class="img-cover" src="images/bedroom.png" alt="Elegant shelf styling close-up">
+            </div>
+        </div>
+    </section>
+
+    <!-- SHARED FOOTER -->
+    <footer class="site-footer">
+        <div class="container site-footer-container">
+            <div class="site-footer-logo-wrap">
+                <span class="site-footer-logo"><img src="images/logo.png" alt="Cubits & Co."></span>
+                <p class="site-footer-copy">&copy; 2026 Cubits & Co. Interiors. All rights reserved.</p>
+            </div>
+            <ul class="site-footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- INTERSECTION OBSERVER FOR SCROLL REVEALS -->
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.12
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Mobile Nav Hamburger Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                document.body.classList.toggle('nav-open');
+            });
+        }
+    </script>
+
+</body>
+</html>

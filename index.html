@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubits & Co. Interiors | Spaces Designed for Living</title>
+    <!-- Fonts Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION HEADER -->
+    <header class="nav-bar">
+        <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Cubits & Co."></a>
+        <button class="nav-toggle" aria-label="Toggle Navigation">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="dark-section" style="padding-top: 80px;">
+        <div class="hero-left reveal">
+            <div class="hero-logo-badge"><img src="images/logo.png" alt="Cubits & Co."></div>
+            <div>
+                <h1 class="hero-title font-display">Interior<br><span>Design</span></h1>
+                <div class="gold-rule-h"></div>
+                <p class="label-caps text-accent">Cubits & Co. Interiors</p>
+            </div>
+            <div class="hero-meta">
+                <p>Spaces Designed for Living.</p>
+                <p class="opacity-60 mt-1">Collection 2026</p>
+            </div>
+        </div>
+        <div class="gold-rule-v"></div>
+        <div class="hero-right">
+            <!-- Slider Slides -->
+            <div class="hero-slide active">
+                <img src="images/hero.png" alt="Minimalist luxury living space">
+            </div>
+            <div class="hero-slide">
+                <img src="images/bedroom.png" alt="Linen master bedroom concept">
+            </div>
+            <div class="hero-slide">
+                <img src="images/lounge.png" alt="Minimalist lounge chair detail">
+            </div>
+            <!-- Slide Dots -->
+            <div class="slider-dots">
+                <button class="slider-dot active" data-index="0"></button>
+                <button class="slider-dot" data-index="1"></button>
+                <button class="slider-dot" data-index="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. DESIGN CONCEPT SECTION -->
+    <section id="design-concept" class="light-section">
+        <div class="container concept-grid">
+            <div class="concept-left reveal">
+                <span class="label-caps text-accent mb-4">01 / Introduction</span>
+                <h2 class="concept-title font-display">Design Concept</h2>
+                <div class="concept-body">
+                    <p>Our philosophy is grounded in creating environments that achieve a harmonious balance between spatial purity and the textures of natural life. We reject cluttered decoration in favor of structural clarity, allowing light and high-end materials to dictate the atmosphere of the room.</p>
+                    <p>By curating custom millwork, raw mineral elements, and soft textiles, we craft bespoke sanctuaries that feel both deeply luxurious and organically grounded. Each room is treated as a unique spatial sculpture tailored to the flow of daily life.</p>
+                </div>
+                <div style="margin-top: 10px; margin-bottom: 30px;">
+                    <a href="about.html" class="partner-link">Learn More About Our Philosophy</a>
+                </div>
+                <div class="swatch-3col reveal delay-200">
+                    <div class="swatch-item">
+                        <div class="swatch-color" style="background-color: #000000;"></div>
+                        <span class="swatch-label">Black</span>
+                    </div>
+                    <div class="swatch-item">
+                        <div class="swatch-color" style="background-color: #D4AF37;"></div>
+                        <span class="swatch-label">Gold</span>
+                    </div>
+                    <div class="swatch-item">
+                        <div class="swatch-color" style="background-color: #FFFFFF; border: 1px solid rgba(0,0,0,0.1);"></div>
+                        <span class="swatch-label">White</span>
+                    </div>
+                </div>
+            </div>
+            <div class="concept-right reveal delay-100">
+                <div class="collage-img-1 border-light">
+                    <img class="img-cover" src="images/bedroom.png" alt="Warm master bedroom concept">
+                </div>
+                <div class="collage-img-2 border-light">
+                    <img class="img-cover" src="images/lounge.png" alt="Minimalist lounge chair detail">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHARED FOOTER -->
+    <footer class="site-footer">
+        <div class="container site-footer-container">
+            <div class="site-footer-logo-wrap">
+                <span class="site-footer-logo"><img src="images/logo.png" alt="Cubits & Co."></span>
+                <p class="site-footer-copy">&copy; 2026 Cubits & Co. Interiors. All rights reserved.</p>
+            </div>
+            <ul class="site-footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- INLINE JAVASCRIPT FOR HERO SLIDER & SCROLL REVEAL -->
+    <script>
+        // Hero Slide Cycler
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.slider-dot');
+        let currentSlide = 0;
+        const slideInterval = 4000;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let next = (currentSlide + 1) % slides.length;
+            showSlide(next);
+        }
+
+        let autoSlide = setInterval(nextSlide, slideInterval);
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                clearInterval(autoSlide);
+                const index = parseInt(dot.getAttribute('data-index'));
+                showSlide(index);
+                autoSlide = setInterval(nextSlide, slideInterval);
+            });
+        });
+
+        // Intersection Observer Reveal Scroll Animation
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.12
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Mobile Nav Hamburger Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                document.body.classList.toggle('nav-open');
+            });
+        }
+    </script>
+
+</body>
+</html>
