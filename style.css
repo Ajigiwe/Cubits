@@ -1329,5 +1329,40 @@ textarea:focus {
     stroke: none;
 }
 
+/* Footer Social Media Icon Circles */
+.footer-socials {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+}
+.footer-socials a.social-link {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: 1.5px solid var(--accent) !important;
+    border-radius: 50%;
+    color: var(--accent) !important;
+    background: transparent;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    text-decoration: none;
+    padding: 0 !important;
+}
+.footer-socials a.social-link:hover {
+    background-color: var(--accent) !important;
+    color: var(--bg-dark) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.2);
+}
+.footer-socials a.social-link svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
 
 
