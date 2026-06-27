@@ -1305,4 +1305,29 @@ textarea:focus {
     border-color: var(--text-dark) !important;
 }
 
+/* Bold SVG Logo Styles */
+.logo-svg {
+    height: 48px;
+    width: auto;
+    stroke: var(--accent);
+    fill: none;
+    stroke-width: 5.5; /* Bolder architectural lines */
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo-svg polygon {
+    fill: var(--accent);
+    stroke: none;
+}
+.logo-svg text {
+    font-family: var(--font-body), sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    fill: var(--accent);
+    stroke: none;
+}
+
+
 
