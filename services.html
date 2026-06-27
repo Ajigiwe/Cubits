@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Cubits & Co. Interiors</title>
+    <title>Services | Interior By Cubits Time</title>
     <!-- Fonts Import -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -12,7 +12,7 @@
 
     <!-- NAVIGATION HEADER -->
     <header class="nav-bar">
-        <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Cubits & Co."></a>
+        <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Interior By Cubits Time"></a>
         <button class="nav-toggle" aria-label="Toggle Navigation">
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
@@ -30,35 +30,55 @@
     <!-- SERVICES SUBPAGE HERO -->
     <section class="light-section subpage-hero" style="padding-bottom: 60px;">
         <div class="container reveal">
-            <span class="label-caps text-accent mb-4 block">01 / Our Capabilities</span>
+            <span class="label-caps text-accent mb-4 block" style="font-weight: 600;">01 / Our Capabilities</span>
             <h1 class="font-display text-5xl uppercase mb-6" style="font-weight: 300; line-height: 1.1;">Bespoke Design &amp;<br>Spatial Planning</h1>
-            <div class="gold-rule-h"></div>
+            <div class="gold-rule-h" style="background-color: var(--text-dark); width: 80px; height: 1px; margin: 24px 0;"></div>
             <p style="max-width: 600px; font-size: 1.05rem; opacity: 0.8; line-height: 1.7;">From initial boundary draft to procurement schedules, we deliver pure architectural and tactile interior systems tailored to residential sanctuaries.</p>
         </div>
     </section>
 
-    <!-- DESIGN HIGHLIGHT SECTION -->
-    <section id="design-highlight" class="dark-section" style="padding: 0; border-top: 1px solid var(--divider);">
-        <div class="highlight-grid">
-            <div class="highlight-left reveal">
-                <img class="img-cover" src="images/hero.png" alt="Moody interior highlight">
+    <!-- PREMIUM SPECIALTIES GRID -->
+    <section id="design-highlight" class="dark-section" style="padding: 100px 0; border-top: 1px solid var(--divider);">
+        <div class="container">
+            <div class="reveal" style="margin-bottom: 60px;">
+                <span class="label-caps text-accent mb-3 block" style="color: var(--text-light); font-weight: 600; opacity: 0.7;">02 / Specialties</span>
+                <h2 class="font-display text-3xl uppercase" style="font-weight: 300;">Craft &amp; Execution</h2>
             </div>
-            <div class="gold-rule-v"></div>
-            <div class="highlight-content reveal delay-100">
-                <span class="label-caps text-accent mb-4">02 / Spatial Elements</span>
-                <h2 class="highlight-title font-display">Design Highlights</h2>
-                <div class="highlight-columns">
-                    <div class="highlight-col reveal delay-200">
-                        <h4>Lighting</h4>
-                        <p>Bespoke architectural fixtures designed to wash concrete surfaces and sculpt clean boundary lines across rooms.</p>
+            
+            <div class="partners-grid-3col">
+                <!-- Woodworks Card -->
+                <div class="partner-card reveal delay-100" style="padding: 40px; border: 1px solid rgba(255,255,255,0.1); background-color: rgba(255,255,255,0.01); display: flex; flex-direction: column; justify-content: space-between; min-height: 380px;">
+                    <div>
+                        <span class="partner-number font-display" style="opacity: 0.8;">01</span>
+                        <h3 class="partner-name font-display" style="margin-top: 15px; margin-bottom: 15px; font-size: 1.5rem; text-transform: uppercase;">Woodworks</h3>
+                        <p class="partner-desc" style="opacity: 0.7;">Bespoke custom cabinetry, timber structures, and precision joinery built to merge seamlessly with architectural borders.</p>
                     </div>
-                    <div class="highlight-col reveal delay-300">
-                        <h4>Furniture</h4>
-                        <p>Low-profile, custom-crafted elements that emphasize horizontal flow and spacious structural breathing room.</p>
+                    <div style="margin-top: 30px;">
+                        <a href="service-woodworks.html" class="partner-link" style="border-bottom: 1px solid var(--text-light);">Learn More →</a>
                     </div>
-                    <div class="highlight-col reveal delay-400">
-                        <h4>Decoration</h4>
-                        <p>Highly curated artisanal pottery, mineral stones, and textured linen throws added to establish rich tactility.</p>
+                </div>
+
+                <!-- Glass Work Card -->
+                <div class="partner-card reveal delay-200" style="padding: 40px; border: 1px solid rgba(255,255,255,0.1); background-color: rgba(255,255,255,0.01); display: flex; flex-direction: column; justify-content: space-between; min-height: 380px;">
+                    <div>
+                        <span class="partner-number font-display" style="opacity: 0.8;">02</span>
+                        <h3 class="partner-name font-display" style="margin-top: 15px; margin-bottom: 15px; font-size: 1.5rem; text-transform: uppercase;">Glass Work</h3>
+                        <p class="partner-desc" style="opacity: 0.7;">Precision glass partitioning, beveled mirrors, and architectural glazing designed to flow light and optimize sightlines.</p>
+                    </div>
+                    <div style="margin-top: 30px;">
+                        <a href="service-glasswork.html" class="partner-link" style="border-bottom: 1px solid var(--text-light);">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Furniture Card -->
+                <div class="partner-card reveal delay-300" style="padding: 40px; border: 1px solid rgba(255,255,255,0.1); background-color: rgba(255,255,255,0.01); display: flex; flex-direction: column; justify-content: space-between; min-height: 380px;">
+                    <div>
+                        <span class="partner-number font-display" style="opacity: 0.8;">03</span>
+                        <h3 class="partner-name font-display" style="margin-top: 15px; margin-bottom: 15px; font-size: 1.5rem; text-transform: uppercase;">Furniture</h3>
+                        <p class="partner-desc" style="opacity: 0.7;">Bespoke, low-profile custom furniture pieces designed to prioritize horizontal lines and tactile materials.</p>
+                    </div>
+                    <div style="margin-top: 30px;">
+                        <a href="service-furniture.html" class="partner-link" style="border-bottom: 1px solid var(--text-light);">Learn More →</a>
                     </div>
                 </div>
             </div>
@@ -66,52 +86,52 @@
     </section>
 
     <!-- FLOOR PLAN OVERVIEW SECTION -->
-    <section id="floor-plan" class="light-section" style="border-top: 1px solid rgba(26,23,20,0.1);">
+    <section id="floor-plan" class="light-section" style="border-top: 1px solid var(--divider); padding: 100px 0;">
         <div class="container floor-plan-grid">
             <div class="reveal">
-                <span class="label-caps text-accent mb-4">03 / Layout Planning</span>
-                <h2 class="floor-plan-title font-display">Floor Plan Overview</h2>
-                <p class="floor-plan-desc">Our structural planning prioritizes seamless transition vectors and sightlines. Spaces are arranged to optimize solar orientation and ensure circulation paths remain completely uninterrupted.</p>
-                <div class="floor-plan-svg-wrap reveal delay-100">
-                    <svg viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span class="label-caps text-accent mb-4 block" style="font-weight: 600;">03 / Spatial Architecture</span>
+                <h2 class="floor-plan-title font-display">Floor Plan Blueprint</h2>
+                <p class="floor-plan-desc" style="margin-bottom: 40px; max-width: 600px; opacity: 0.8;">Our structural planning prioritizes seamless transition vectors and sightlines. Spaces are arranged to optimize solar orientation and ensure circulation paths remain completely uninterrupted.</p>
+                <div class="floor-plan-svg-wrap reveal delay-100" style="border: 1px solid var(--divider); background: #FFFFFF; padding: 24px;">
+                    <svg viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto;">
                         <!-- Outer Walls -->
-                        <rect x="10" y="10" width="480" height="280" stroke="#1A1714" stroke-width="2"/>
+                        <rect x="10" y="10" width="480" height="280" stroke="#111111" stroke-width="1.5"/>
                         <!-- Internal Dividers -->
-                        <line x1="220" y1="10" x2="220" y2="210" stroke="#1A1714" stroke-width="1.5"/>
-                        <line x1="220" y1="210" x2="490" y2="210" stroke="#1A1714" stroke-width="1.5"/>
-                        <line x1="10" y1="150" x2="220" y2="150" stroke="#1A1714" stroke-width="1.5"/>
-                        <line x1="350" y1="210" x2="350" y2="290" stroke="#1A1714" stroke-width="1.5"/>
+                        <line x1="220" y1="10" x2="220" y2="210" stroke="#111111" stroke-width="1" stroke-dasharray="2 2"/>
+                        <line x1="220" y1="210" x2="490" y2="210" stroke="#111111" stroke-width="1"/>
+                        <line x1="10" y1="150" x2="220" y2="150" stroke="#111111" stroke-width="1"/>
+                        <line x1="350" y1="210" x2="350" y2="290" stroke="#111111" stroke-width="1" stroke-dasharray="2 2"/>
                         <!-- Room Titles -->
-                        <text x="115" y="85" fill="#1A1714" font-family="Jost" font-size="12" font-weight="500" letter-spacing="0.1em" text-anchor="middle">LIVING AREA</text>
-                        <text x="115" y="225" fill="#1A1714" font-family="Jost" font-size="12" font-weight="500" letter-spacing="0.1em" text-anchor="middle">MASTER SUITE</text>
-                        <text x="355" y="115" fill="#1A1714" font-family="Jost" font-size="12" font-weight="500" letter-spacing="0.1em" text-anchor="middle">KITCHEN / DINING</text>
-                        <text x="285" y="255" fill="#1A1714" font-family="Jost" font-size="10" font-weight="500" letter-spacing="0.1em" text-anchor="middle">BATH</text>
-                        <text x="420" y="255" fill="#1A1714" font-family="Jost" font-size="10" font-weight="500" letter-spacing="0.1em" text-anchor="middle">TERRACE</text>
+                        <text x="115" y="85" fill="#111111" font-family="Jost" font-size="11" font-weight="500" letter-spacing="0.15em" text-anchor="middle">LIVING AREA</text>
+                        <text x="115" y="225" fill="#111111" font-family="Jost" font-size="11" font-weight="500" letter-spacing="0.15em" text-anchor="middle">MASTER SUITE</text>
+                        <text x="355" y="115" fill="#111111" font-family="Jost" font-size="11" font-weight="500" letter-spacing="0.15em" text-anchor="middle">KITCHEN / DINING</text>
+                        <text x="285" y="255" fill="#111111" font-family="Jost" font-size="9" font-weight="500" letter-spacing="0.1em" text-anchor="middle">BATH</text>
+                        <text x="420" y="255" fill="#111111" font-family="Jost" font-size="9" font-weight="500" letter-spacing="0.1em" text-anchor="middle">TERRACE</text>
                     </svg>
                 </div>
             </div>
             <div class="floor-plan-right reveal delay-200">
-                <span class="label-caps text-accent mb-6 block">Material Tactility</span>
-                <div class="swatch-3col">
-                    <div class="material-card">
-                        <div class="material-thumb"><img src="images/detail.png" style="width: 100%; height: 100%;" alt="Travertine"></div>
+                <span class="label-caps text-accent mb-6 block" style="font-weight: 600;">Material Curation</span>
+                <div class="swatch-3col" style="display: flex; flex-direction: column; gap: 20px;">
+                    <div class="material-card" style="display: flex; align-items: center; gap: 16px; border: 1px solid var(--divider); padding: 16px;">
+                        <div class="material-thumb" style="width: 60px; height: 60px; overflow: hidden; border: 1px solid var(--divider);"><img src="images/detail.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Travertine"></div>
                         <div class="material-meta">
-                            <span class="material-name">Travertine</span>
-                            <span class="material-type">Stone</span>
+                            <span class="material-name" style="font-family: var(--font-body); font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; display: block; color: var(--text-dark);">Travertine</span>
+                            <span class="material-type" style="font-size: 0.75rem; opacity: 0.6;">Stonework</span>
                         </div>
                     </div>
-                    <div class="material-card">
-                        <div class="material-thumb"><img src="images/detail.png" style="width: 100%; height: 100%;" alt="Smoked Oak"></div>
+                    <div class="material-card" style="display: flex; align-items: center; gap: 16px; border: 1px solid var(--divider); padding: 16px;">
+                        <div class="material-thumb" style="width: 60px; height: 60px; overflow: hidden; border: 1px solid var(--divider);"><img src="images/detail.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Smoked Oak"></div>
                         <div class="material-meta">
-                            <span class="material-name">Smoked Oak</span>
-                            <span class="material-type">Wood</span>
+                            <span class="material-name" style="font-family: var(--font-body); font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; display: block; color: var(--text-dark);">Smoked Oak</span>
+                            <span class="material-type" style="font-size: 0.75rem; opacity: 0.6;">Timber</span>
                         </div>
                     </div>
-                    <div class="material-card">
-                        <div class="material-thumb"><img src="images/detail.png" style="width: 100%; height: 100%;" alt="Raw Bouclé"></div>
+                    <div class="material-card" style="display: flex; align-items: center; gap: 16px; border: 1px solid var(--divider); padding: 16px;">
+                        <div class="material-thumb" style="width: 60px; height: 60px; overflow: hidden; border: 1px solid var(--divider);"><img src="images/detail.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Raw Bouclé"></div>
                         <div class="material-meta">
-                            <span class="material-name">Raw Bouclé</span>
-                            <span class="material-type">Fabric</span>
+                            <span class="material-name" style="font-family: var(--font-body); font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; display: block; color: var(--text-dark);">Raw Bouclé</span>
+                            <span class="material-type" style="font-size: 0.75rem; opacity: 0.6;">Textile</span>
                         </div>
                     </div>
                 </div>
@@ -119,33 +139,39 @@
         </div>
     </section>
 
-    <!-- THE NEXT STEP SECTION -->
-    <section id="next-step" class="light-section" style="border-top: 1px solid rgba(26,23,20,0.1);">
-        <div class="container next-step-grid">
-            <div class="next-step-left reveal">
-                <span class="label-caps text-accent mb-4">04 / Implementation</span>
-                <h2 class="next-step-title font-display">The Next Step</h2>
-                <div class="checklist">
-                    <div class="checklist-item reveal delay-100">
-                        <span class="checklist-icon">✓</span>
-                        <p class="checklist-text"><strong>Structural Consultation</strong><br>Conducting an on-site spatial assessment to verify exact dimensions and boundary parameters.</p>
-                    </div>
-                    <div class="checklist-item reveal delay-200">
-                        <span class="checklist-icon">✓</span>
-                        <p class="checklist-text"><strong>Material Finalization</strong><br>Reviewing raw samples of smoked oak, travertine, and zellige tiles under natural site lighting conditions.</p>
-                    </div>
-                    <div class="checklist-item reveal delay-300">
-                        <span class="checklist-icon">✓</span>
-                        <p class="checklist-text"><strong>Millwork Blueprints</strong><br>Finalizing architectural drawings and construction tolerances for the floating bedside cabinets and storage.</p>
-                    </div>
-                    <div class="checklist-item reveal delay-400">
-                        <span class="checklist-icon">✓</span>
-                        <p class="checklist-text"><strong>Procurement Initiation</strong><br>Transmitting formal acquisition orders for the curated furniture schedule and materials.</p>
-                    </div>
-                </div>
+    <!-- IMPLEMENTATION PROCESS TIMELINE -->
+    <section id="process-timeline" class="light-section" style="border-top: 1px solid var(--divider); padding: 100px 0;">
+        <div class="container">
+            <div class="reveal" style="margin-bottom: 60px;">
+                <span class="label-caps text-accent mb-3 block" style="font-weight: 600;">04 / Process Workflow</span>
+                <h2 class="font-display text-3xl uppercase" style="font-weight: 300;">The Design Phases</h2>
             </div>
-            <div class="next-step-right reveal delay-200">
-                <img class="img-cover" src="images/bedroom.png" alt="Elegant shelf styling close-up">
+            
+            <div class="partners-grid-3col" style="grid-template-columns: repeat(4, 1fr); gap: 24px;">
+                <!-- Phase 1 -->
+                <div class="reveal delay-100" style="border-top: 1px solid var(--text-dark); padding-top: 24px;">
+                    <span class="label-caps text-accent mb-2 block" style="font-size: 0.7rem; font-weight: 600;">Phase 01</span>
+                    <h4 style="font-family: var(--font-body); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.05em; font-weight: 600; margin-bottom: 12px; color: var(--text-dark);">Consultation</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.75; line-height: 1.6;">Conducting site dimensions, spatial boundaries mapping, and circulation alignment reviews.</p>
+                </div>
+                <!-- Phase 2 -->
+                <div class="reveal delay-200" style="border-top: 1px solid var(--text-dark); padding-top: 24px;">
+                    <span class="label-caps text-accent mb-2 block" style="font-size: 0.7rem; font-weight: 600;">Phase 02</span>
+                    <h4 style="font-family: var(--font-body); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.05em; font-weight: 600; margin-bottom: 12px; color: var(--text-dark);">Material Curation</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.75; line-height: 1.6;">Reviewing mineral stone, premium timber finishes, and soft textile samples under natural light parameters.</p>
+                </div>
+                <!-- Phase 3 -->
+                <div class="reveal delay-300" style="border-top: 1px solid var(--text-dark); padding-top: 24px;">
+                    <span class="label-caps text-accent mb-2 block" style="font-size: 0.7rem; font-weight: 600;">Phase 03</span>
+                    <h4 style="font-family: var(--font-body); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.05em; font-weight: 600; margin-bottom: 12px; color: var(--text-dark);">Blueprints</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.75; line-height: 1.6;">Drafting construction tolerances and details for built-in millwork and custom furniture arrays.</p>
+                </div>
+                <!-- Phase 4 -->
+                <div class="reveal delay-400" style="border-top: 1px solid var(--text-dark); padding-top: 24px;">
+                    <span class="label-caps text-accent mb-2 block" style="font-size: 0.7rem; font-weight: 600;">Phase 04</span>
+                    <h4 style="font-family: var(--font-body); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.05em; font-weight: 600; margin-bottom: 12px; color: var(--text-dark);">Procurement</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.75; line-height: 1.6;">Transmitting procurement sheets, on-site assembly alignment, and final spatial styling execution.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -154,8 +180,18 @@
     <footer class="site-footer">
         <div class="container site-footer-container">
             <div class="site-footer-logo-wrap">
-                <span class="site-footer-logo"><img src="images/logo.png" alt="Cubits & Co."></span>
-                <p class="site-footer-copy">&copy; 2026 Cubits & Co. Interiors. All rights reserved.</p>
+                <span class="site-footer-logo"><img src="images/logo.png" alt="Interior By Cubits Time"></span>
+                <p class="site-footer-copy">&copy; 2026 Interior By Cubits Time. All rights reserved. <span style="display: block; margin-top: 4px; opacity: 0.8;">Site by GadVish (<a href="tel:+233500437993" style="color: inherit; text-decoration: none;">+233 50 043 7993</a>)</span></p>
+                <div class="footer-socials" style="margin-top: 12px; display: flex; gap: 16px;">
+                    <a href="https://wa.me/0576086967" target="_blank" rel="noopener noreferrer" class="social-link" style="color: var(--accent); text-decoration: none; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 6px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.949h.004c4.368 0 7.927-3.558 7.93-7.93a7.9 7.9 0 0 0-2.33-5.607zM7.994 13.06a6.6 6.6 0 0 1-3.278-.872l-.236-.14-2.43.636.647-2.37-.154-.245a6.57 6.57 0 0 1-1.008-3.5c.003-3.633 2.97-6.593 6.614-6.593a6.59 6.59 0 0 1 4.666 1.93 6.59 6.59 0 0 1 1.929 4.667c-.003 3.633-2.97 6.593-6.613 6.593m3.473-4.96c-.185-.093-1.098-.542-1.268-.604-.17-.063-.293-.093-.417.093-.125.187-.482.604-.59.729-.109.125-.219.14-.405.047a5.5 5.5 0 0 1-1.51-1.36c-.466-.401-.84-1.002-.912-1.124-.072-.122-.008-.188.053-.249.056-.054.125-.145.187-.217.063-.072.083-.122.124-.2.041-.078.02-.145-.01-.207-.03-.062-.293-.707-.4-.963-.105-.255-.21-.22-.293-.224-.075-.003-.16-.004-.245-.004a.48.48 0 0 0-.35.162c-.12.13-.457.447-.457 1.09 0 .642.467 1.26.53 1.348.064.088.918 1.4 2.226 1.964.312.134.557.214.747.275.313.1.597.086.822.052.25-.038.799-.327.91-.643.11-.317.11-.59.078-.644-.03-.053-.113-.093-.298-.186"/></svg>
+                        WhatsApp
+                    </a>
+                    <a href="https://www.instagram.com/interiorsbycubitstime?igsh=MWhub2NjeDc0ZXJ0Zw==" target="_blank" rel="noopener noreferrer" class="social-link" style="color: var(--accent); text-decoration: none; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 6px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04 8.5.18 1.416.363 1.926a3.9 3.9 0 0 0 .923 1.417 3.9 3.9 0 0 0 1.417.923c.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.991.924-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.444-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.6c.282-.109.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+                        Instagram
+                    </a>
+                </div>
             </div>
             <ul class="site-footer-links">
                 <li><a href="index.html">Home</a></li>

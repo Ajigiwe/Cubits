@@ -1279,3 +1279,30 @@ section {
         gap: 16px;
     }
 }
+
+/* Custom Social & Subpage Styles */
+.footer-socials a {
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.footer-socials a:hover {
+    color: var(--text-light) !important;
+    transform: translateY(-2px);
+}
+.contact-line-last a {
+    transition: all 0.3s ease;
+}
+.contact-line-last a:hover {
+    background-color: var(--accent) !important;
+    color: var(--text-dark) !important;
+}
+
+/* Input Focus States */
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--text-dark) !important;
+}
+
+

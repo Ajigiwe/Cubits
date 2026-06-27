@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Cubits & Co. Interiors</title>
+    <title>Contact | Interior By Cubits Time</title>
     <!-- Fonts Import -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -12,7 +12,7 @@
 
     <!-- NAVIGATION HEADER -->
     <header class="nav-bar">
-        <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Cubits & Co."></a>
+        <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Interior By Cubits Time"></a>
         <button class="nav-toggle" aria-label="Toggle Navigation">
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
@@ -27,16 +27,83 @@
         </ul>
     </header>
 
-    <!-- CONTACT US SECTION -->
-    <section id="contact" class="dark-section subpage-hero" style="min-height: calc(100vh - 200px); display: flex; align-items: center; justify-content: center; padding: 120px 0 60px 0;">
-        <div class="container contact-content reveal">
-            <span class="label-caps text-accent mb-4">01 / Transmission</span>
-            <h2 class="contact-title font-display">Contact Us</h2>
-            <p class="contact-tagline">Spaces Designed for Living.</p>
-            <div class="contact-details">
-                <div class="contact-line reveal delay-100">inquiries@cubitsandco.com</div>
-                <div class="contact-line reveal delay-200">+1 (212) 555-0195</div>
-                <div class="contact-line contact-line-last reveal delay-300">1440 Broadway, Suite 2300, New York, NY</div>
+    <!-- CONTACT EDITORIAL SECTION -->
+    <section id="contact-editorial" class="light-section subpage-hero" style="padding-bottom: 80px;">
+        <div class="container">
+            <div class="concept-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;">
+                <!-- Left Column: Details & Form -->
+                <div class="reveal">
+                    <span class="label-caps text-accent mb-4 block" style="font-weight: 600;">01 / Project Consultation</span>
+                    <h1 class="font-display text-4xl uppercase mb-6" style="font-weight: 300; line-height: 1.1;">Start Your Project</h1>
+                    <p style="opacity: 0.8; line-height: 1.6; margin-bottom: 40px; font-size: 0.95rem;">Fill out our conceptual inquiry sheet below, or contact our Accra studio directly to arrange an on-site spatial consultation.</p>
+                    
+                    <!-- Premium Architectural Contact Form -->
+                    <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 24px;">
+                        <div style="display: flex; flex-direction: column; gap: 6px;">
+                            <label for="client-name" style="font-family: var(--font-body); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; color: var(--text-dark);">Your Name</label>
+                            <input type="text" id="client-name" name="name" required placeholder="e.g. Ama Mensah" style="width: 100%; padding: 12px; border: 1px solid var(--divider); background: transparent; color: var(--text-dark); font-family: var(--font-body); font-size: 0.9rem; outline: none; transition: border-color 0.3s ease;">
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 6px;">
+                            <label for="client-email" style="font-family: var(--font-body); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; color: var(--text-dark);">Email Address</label>
+                            <input type="email" id="client-email" name="email" required placeholder="e.g. client@example.com" style="width: 100%; padding: 12px; border: 1px solid var(--divider); background: transparent; color: var(--text-dark); font-family: var(--font-body); font-size: 0.9rem; outline: none; transition: border-color 0.3s ease;">
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 6px;">
+                            <label for="project-type" style="font-family: var(--font-body); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; color: var(--text-dark);">Service Category</label>
+                            <select id="project-type" name="category" style="width: 100%; padding: 12px; border: 1px solid var(--divider); background: transparent; color: var(--text-dark); font-family: var(--font-body); font-size: 0.9rem; outline: none; transition: border-color 0.3s ease;">
+                                <option value="residential">Residential Interior Design</option>
+                                <option value="woodworks">Custom Woodworks &amp; Millwork</option>
+                                <option value="glasswork">Architectural Glass Work</option>
+                                <option value="furniture">Bespoke Furniture Curation</option>
+                                <option value="other">General Spatial Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 6px;">
+                            <label for="client-message" style="font-family: var(--font-body); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; color: var(--text-dark);">Inquiry Details</label>
+                            <textarea id="client-message" name="message" rows="4" required placeholder="Describe your spatial parameters or concept requirements..." style="width: 100%; padding: 12px; border: 1px solid var(--divider); background: transparent; color: var(--text-dark); font-family: var(--font-body); font-size: 0.9rem; outline: none; transition: border-color 0.3s ease; resize: vertical;"></textarea>
+                        </div>
+
+                        <button type="submit" style="align-self: flex-start; padding: 14px 36px; background-color: var(--text-dark); color: var(--surface-light); border: none; font-family: var(--font-body); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; cursor: pointer; transition: opacity 0.3s ease;">Submit Inquiry</button>
+                    </form>
+                </div>
+
+                <!-- Right Column: Visual Feature & Studio Details -->
+                <div class="reveal delay-100" style="display: flex; flex-direction: column; gap: 40px;">
+                    <!-- Split Image Showcase -->
+                    <div style="width: 100%; height: 320px; overflow: hidden; border: 1px solid var(--divider);">
+                        <img class="img-cover" src="images/lounge.png" alt="Interior lounge detail space">
+                    </div>
+                    
+                    <!-- Direct Contacts -->
+                    <div style="border-top: 1px solid var(--divider); padding-top: 30px;">
+                        <span class="label-caps text-accent mb-4 block" style="font-weight: 600;">02 / Studio Directory</span>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 20px;">
+                            <div>
+                                <span style="font-size: 0.75rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 4px;">Studio Number</span>
+                                <a href="tel:+233576086967" style="color: var(--text-dark); text-decoration: none; font-family: var(--font-body); font-size: 1.1rem; font-weight: 500;">+233 57 608 6967</a>
+                            </div>
+
+                            <div>
+                                <span style="font-size: 0.75rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 4px;">Accra Office</span>
+                                <a href="https://maps.app.goo.gl/pqDfPX3CdpsKt5w39?g_st=ac" target="_blank" rel="noopener noreferrer" style="color: var(--text-dark); text-decoration: none; font-family: var(--font-body); font-size: 1.1rem; font-weight: 500; border-bottom: 1px solid transparent; transition: border-color 0.3s ease;">HRCC+3J5, Accra, Ghana</a>
+                            </div>
+
+                            <div style="display: flex; gap: 16px; margin-top: 10px;">
+                                <a href="https://wa.me/0576086967" target="_blank" rel="noopener noreferrer" style="color: var(--text-dark); text-decoration: none; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; border: 1px solid var(--text-dark); padding: 10px 20px; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 6px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.949h.004c4.368 0 7.927-3.558 7.93-7.93a7.9 7.9 0 0 0-2.33-5.607zM7.994 13.06a6.6 6.6 0 0 1-3.278-.872l-.236-.14-2.43.636.647-2.37-.154-.245a6.57 6.57 0 0 1-1.008-3.5c.003-3.633 2.97-6.593 6.614-6.593a6.59 6.59 0 0 1 4.666 1.93 6.59 6.59 0 0 1 1.929 4.667c-.003 3.633-2.97 6.593-6.613 6.593m3.473-4.96c-.185-.093-1.098-.542-1.268-.604-.17-.063-.293-.093-.417.093-.125.187-.482.604-.59.729-.109.125-.219.14-.405.047a5.5 5.5 0 0 1-1.51-1.36c-.466-.401-.84-1.002-.912-1.124-.072-.122-.008-.188.053-.249.056-.054.125-.145.187-.217.063-.072.083-.122.124-.2.041-.078.02-.145-.01-.207-.03-.062-.293-.707-.4-.963-.105-.255-.21-.22-.293-.224-.075-.003-.16-.004-.245-.004a.48.48 0 0 0-.35.162c-.12.13-.457.447-.457 1.09 0 .642.467 1.26.53 1.348.064.088.918 1.4 2.226 1.964.312.134.557.214.747.275.313.1.597.086.822.052.25-.038.799-.327.91-.643.11-.317.11-.59.078-.644-.03-.053-.113-.093-.298-.186"/></svg>
+                                    WhatsApp
+                                </a>
+                                <a href="https://www.instagram.com/interiorsbycubitstime?igsh=MWhub2NjeDc0ZXJ0Zw==" target="_blank" rel="noopener noreferrer" style="color: var(--text-dark); text-decoration: none; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; border: 1px solid var(--text-dark); padding: 10px 20px; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 6px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04 8.5.18 1.416.363 1.926a3.9 3.9 0 0 0 .923 1.417 3.9 3.9 0 0 0 1.417.923c.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.991.924-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.444-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.6c.282-.109.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+                                    Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -45,8 +112,18 @@
     <footer class="site-footer">
         <div class="container site-footer-container">
             <div class="site-footer-logo-wrap">
-                <span class="site-footer-logo"><img src="images/logo.png" alt="Cubits & Co."></span>
-                <p class="site-footer-copy">&copy; 2026 Cubits & Co. Interiors. All rights reserved.</p>
+                <span class="site-footer-logo"><img src="images/logo.png" alt="Interior By Cubits Time"></span>
+                <p class="site-footer-copy">&copy; 2026 Interior By Cubits Time. All rights reserved. <span style="display: block; margin-top: 4px; opacity: 0.8;">Site by GadVish (<a href="tel:+233500437993" style="color: inherit; text-decoration: none;">+233 50 043 7993</a>)</span></p>
+                <div class="footer-socials" style="margin-top: 12px; display: flex; gap: 16px;">
+                    <a href="https://wa.me/0576086967" target="_blank" rel="noopener noreferrer" class="social-link" style="color: var(--accent); text-decoration: none; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 6px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.949h.004c4.368 0 7.927-3.558 7.93-7.93a7.9 7.9 0 0 0-2.33-5.607zM7.994 13.06a6.6 6.6 0 0 1-3.278-.872l-.236-.14-2.43.636.647-2.37-.154-.245a6.57 6.57 0 0 1-1.008-3.5c.003-3.633 2.97-6.593 6.614-6.593a6.59 6.59 0 0 1 4.666 1.93 6.59 6.59 0 0 1 1.929 4.667c-.003 3.633-2.97 6.593-6.613 6.593m3.473-4.96c-.185-.093-1.098-.542-1.268-.604-.17-.063-.293-.093-.417.093-.125.187-.482.604-.59.729-.109.125-.219.14-.405.047a5.5 5.5 0 0 1-1.51-1.36c-.466-.401-.84-1.002-.912-1.124-.072-.122-.008-.188.053-.249.056-.054.125-.145.187-.217.063-.072.083-.122.124-.2.041-.078.02-.145-.01-.207-.03-.062-.293-.707-.4-.963-.105-.255-.21-.22-.293-.224-.075-.003-.16-.004-.245-.004a.48.48 0 0 0-.35.162c-.12.13-.457.447-.457 1.09 0 .642.467 1.26.53 1.348.064.088.918 1.4 2.226 1.964.312.134.557.214.747.275.313.1.597.086.822.052.25-.038.799-.327.91-.643.11-.317.11-.59.078-.644-.03-.053-.113-.093-.298-.186"/></svg>
+                        WhatsApp
+                    </a>
+                    <a href="https://www.instagram.com/interiorsbycubitstime?igsh=MWhub2NjeDc0ZXJ0Zw==" target="_blank" rel="noopener noreferrer" class="social-link" style="color: var(--accent); text-decoration: none; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 6px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04 8.5.18 1.416.363 1.926a3.9 3.9 0 0 0 .923 1.417 3.9 3.9 0 0 0 1.417.923c.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.991.924-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.444-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.6c.282-.109.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+                        Instagram
+                    </a>
+                </div>
             </div>
             <ul class="site-footer-links">
                 <li><a href="index.html">Home</a></li>

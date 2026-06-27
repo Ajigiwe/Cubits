@@ -25,8 +25,3 @@ This design system is tailored for a highly professional premium interior design
 - **Deep Warm Charcoal (#2C2825):** Core canvas background for dark sections.
 - **Warm Linen/Cream (#E8E0D5):** Clean background surface for light sections.
 - **Muted Gold/Caramel (#C4A882):** Highlight accents and rule lines.
-
-## Typography
-
-- **Playfair Display:** Elegant Display Serif for section headers and display quotes.
-- **Jost:** Clean, architectural sans-serif for labels, body copy, and metadata descriptions.
