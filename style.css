@@ -1502,6 +1502,95 @@ textarea:focus {
     color: var(--surface-light);
 }
 
+/* Sticky Inquiry Cart Bar */
+.inquiry-cart-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--text-dark);
+    color: var(--surface-light);
+    border-top: 1px solid var(--accent);
+    padding: 16px 24px;
+    z-index: 1000;
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.inquiry-cart-bar.active {
+    transform: translateY(0);
+}
+.inquiry-cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.inquiry-cart-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.inquiry-cart-title {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+.inquiry-cart-details {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+.inquiry-cart-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    background-color: var(--accent);
+    color: var(--text-dark);
+    border: none;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.inquiry-cart-btn:hover {
+    background-color: var(--surface-light);
+    color: var(--text-dark);
+}
+.shop-product-action.selected {
+    background-color: var(--accent);
+    color: var(--text-dark);
+    border-color: var(--accent);
+}
+.shop-product-action.selected:hover {
+    opacity: 0.9;
+}
+@media (max-width: 768px) {
+    .inquiry-cart-bar {
+        padding: 16px;
+    }
+    .inquiry-cart-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        text-align: center;
+    }
+    .inquiry-cart-btn {
+        justify-content: center;
+    }
+}
+
+
 
 
 

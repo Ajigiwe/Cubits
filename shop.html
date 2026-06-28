@@ -39,7 +39,7 @@
     </section>
 
     <!-- SHOP MAIN COLLECTIVE -->
-    <section class="light-section" style="padding: 40px 0 100px 0; border-top: 1px solid var(--divider);">
+    <section class="light-section" style="padding: 40px 0 120px 0; border-top: 1px solid var(--divider);">
         <div class="container">
             
             <!-- Filters -->
@@ -65,7 +65,7 @@
                         </div>
                         <span class="shop-product-sku">SKU-BED-09</span>
                         <p class="shop-product-desc">Low-profile solid oak frame wrapped in custom textured linen upholstery, emphasizing clean lines and horizontal boundaries.</p>
-                        <a href="contact.html?inquiry=Monolith-Bed-Frame" class="shop-product-action">Inquire Piece</a>
+                        <button class="shop-product-action" data-title="Monolith Bed Frame" data-price="1850" data-sku="SKU-BED-09">Inquire Piece</button>
                     </div>
                 </div>
 
@@ -81,7 +81,7 @@
                         </div>
                         <span class="shop-product-sku">SKU-LGT-22</span>
                         <p class="shop-product-desc">Minimalist cylindrical pendant light fixture with a brushed gold metallic finish, optimized for architectural downlight pools.</p>
-                        <a href="contact.html?inquiry=Satin-Gold-Pendant" class="shop-product-action">Inquire Piece</a>
+                        <button class="shop-product-action" data-title="Satin Gold Pendant Light" data-price="420" data-sku="SKU-LGT-22">Inquire Piece</button>
                     </div>
                 </div>
 
@@ -97,7 +97,7 @@
                         </div>
                         <span class="shop-product-sku">SKU-CAB-04</span>
                         <p class="shop-product-desc">Floating stone bedside tables featuring custom soft-close drawers, mitered joints, and rich natural travertine facades.</p>
-                        <a href="contact.html?inquiry=Alabaster-Nightstands" class="shop-product-action">Inquire Piece</a>
+                        <button class="shop-product-action" data-title="Alabaster Nightstands" data-price="950" data-sku="SKU-CAB-04">Inquire Piece</button>
                     </div>
                 </div>
 
@@ -113,7 +113,7 @@
                         </div>
                         <span class="shop-product-sku">SKU-TBL-14</span>
                         <p class="shop-product-desc">Solid honed travertine stone coffee table displaying structural geometric volumes and polished edge reliefs.</p>
-                        <a href="contact.html?inquiry=Travertine-Plinth-Table" class="shop-product-action">Inquire Piece</a>
+                        <button class="shop-product-action" data-title="Travertine Plinth Table" data-price="1200" data-sku="SKU-TBL-14">Inquire Piece</button>
                     </div>
                 </div>
 
@@ -129,7 +129,7 @@
                         </div>
                         <span class="shop-product-sku">SKU-LGT-08</span>
                         <p class="shop-product-desc">Pure brushed brass vertical wall sconce designed to wash perimeter walls in direct, warm illumination pools.</p>
-                        <a href="contact.html?inquiry=Linear-Brass-Sconce" class="shop-product-action">Inquire Piece</a>
+                        <button class="shop-product-action" data-title="Linear Brass Sconce" data-price="280" data-sku="SKU-LGT-08">Inquire Piece</button>
                     </div>
                 </div>
 
@@ -145,7 +145,7 @@
                         </div>
                         <span class="shop-product-sku">SKU-TEX-31</span>
                         <p class="shop-product-desc">Hand-loomed raw organic flax linen quilt in architectural natural slate grey with hand-finished hem detailing.</p>
-                        <a href="contact.html?inquiry=Raw-Flax-Linen-Quilt" class="shop-product-action">Inquire Piece</a>
+                        <button class="shop-product-action" data-title="Raw Flax Linen Quilt" data-price="310" data-sku="SKU-TEX-31">Inquire Piece</button>
                     </div>
                 </div>
 
@@ -161,13 +161,27 @@
                         </div>
                         <span class="shop-product-sku">SKU-ACC-05</span>
                         <p class="shop-product-desc">Carved raw volcanic stoneware vase showing rich geological details, ideal as a standalone sculptural object.</p>
-                        <a href="contact.html?inquiry=Mineral-Stone-Vessel" class="shop-product-action">Inquire Piece</a>
+                        <button class="shop-product-action" data-title="Mineral Stone Vessel" data-price="180" data-sku="SKU-ACC-05">Inquire Piece</button>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+
+    <!-- STICKY INQUIRY CART BAR -->
+    <div class="inquiry-cart-bar" id="inquiry-cart">
+        <div class="inquiry-cart-container">
+            <div class="inquiry-cart-summary">
+                <span class="inquiry-cart-title">Selected Pieces</span>
+                <span class="inquiry-cart-details" id="cart-details">No items selected</span>
+            </div>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="inquiry-cart-btn" id="whatsapp-inquire-btn">
+                Inquire via WhatsApp
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin: 0; fill: currentColor;"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.949h.004c4.368 0 7.927-3.558 7.93-7.93a7.9 7.9 0 0 0-2.33-5.607zM7.994 13.06a6.6 6.6 0 0 1-3.278-.872l-.236-.14-2.43.636.647-2.37-.154-.245a6.57 6.57 0 0 1-1.008-3.5c.003-3.633 2.97-6.593 6.614-6.593a6.59 6.59 0 0 1 4.666 1.93 6.59 6.59 0 0 1 1.929 4.667c-.003 3.633-2.97 6.593-6.613 6.593m3.473-4.96c-.185-.093-1.098-.542-1.268-.604-.17-.063-.293-.093-.417.093-.125.187-.482.604-.59.729-.109.125-.219.14-.405.047a5.5 5.5 0 0 1-1.51-1.36c-.466-.401-.84-1.002-.912-1.124-.072-.122-.008-.188.053-.249.056-.054.125-.145.187-.217.063-.072.083-.122.124-.2.041-.078.02-.145-.01-.207-.03-.062-.293-.707-.4-.963-.105-.255-.21-.22-.293-.224-.075-.003-.16-.004-.245-.004a.48.48 0 0 0-.35.162c-.12.13-.457.447-.457 1.09 0 .642.467 1.26.53 1.348.064.088.918 1.4 2.226 1.964.312.134.557.214.747.275.313.1.597.086.822.052.25-.038.799-.327.91-.643.11-.317.11-.59.078-.644-.03-.053-.113-.093-.298-.186"/></svg>
+            </a>
+        </div>
+    </div>
 
     <!-- SHARED FOOTER -->
     <footer class="site-footer">
@@ -177,7 +191,7 @@
                 <p class="site-footer-copy">&copy; 2026 Interiors By Cubits Time. All rights reserved. <span style="display: block; margin-top: 4px; opacity: 0.8;">Site by <a href="https://wa.me/233500437993" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(212, 175, 55, 0.4);">GadVish</a></span></p>
                 <div class="footer-socials">
                     <a href="https://wa.me/0576086967" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.949h.004c4.368 0 7.927-3.558 7.93-7.93a7.9 7.9 0 0 0-2.33-5.607zM7.994 13.06a6.6 6.6 0 0 1-3.278-.872l-.236-.14-2.43.636.647-2.37-.154-.245a6.57 6.57 0 0 1-1.008-3.5c.003-3.633 2.97-6.593 6.614-6.593a6.59 6.59 0 0 1 4.666 1.93(6.59 6.59 0 0 1 1.929 4.667c-.003 3.633-2.97 6.593-6.613 6.593m3.473-4.96c-.185-.093-1.098-.542-1.268-.604-.17-.063-.293-.093-.417.093-.125.187-.482.604-.59.729-.109.125-.219.14-.405.047a5.5 5.5 0 0 1-1.51-1.36c-.466-.401-.84-1.002-.912-1.124-.072-.122-.008-.188.053-.249.056-.054.125-.145.187-.217.063-.072.083-.122.124-.2.041-.078.02-.145-.01-.207-.03-.062-.293-.707-.4-.963-.105-.255-.21-.22-.293-.224-.075-.003-.16-.004-.245-.004a.48.48 0 0 0-.35.162c-.12.13-.457.447-.457 1.09 0 .642.467 1.26.53 1.348.064.088.918 1.4 2.226 1.964.312.134.557.214.747.275.313.1.597.086.822.052.25-.038.799-.327.91-.643.11-.317.11-.59.078-.644-.03-.053-.113-.093-.298-.186"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.949h.004c4.368 0 7.927-3.558 7.93-7.93a7.9 7.9 0 0 0-2.33-5.607zM7.994 13.06a6.6 6.6 0 0 1-3.278-.872l-.236-.14-2.43.636.647-2.37-.154-.245a6.57 6.57 0 0 1-1.008-3.5c.003-3.633 2.97-6.593 6.614-6.593a6.59 6.59 0 0 1 4.666 1.93c(6.59 6.59 0 0 1 1.929 4.667c-.003 3.633-2.97 6.593-6.613 6.593m3.473-4.96c-.185-.093-1.098-.542-1.268-.604-.17-.063-.293-.093-.417.093-.125.187-.482.604-.59.729-.109.125-.219.14-.405.047a5.5 5.5 0 0 1-1.51-1.36c-.466-.401-.84-1.002-.912-1.124-.072-.122-.008-.188.053-.249.056-.054.125-.145.187-.217.063-.072.083-.122.124-.2.041-.078.02-.145-.01-.207-.03-.062-.293-.707-.4-.963-.105-.255-.21-.22-.293-.224-.075-.003-.16-.004-.245-.004a.48.48 0 0 0-.35.162c-.12.13-.457.447-.457 1.09 0 .642.467 1.26.53 1.348.064.088.918 1.4 2.226 1.964.312.134.557.214.747.275.313.1.597.086.822.052.25-.038.799-.327.91-.643.11-.317.11-.59.078-.644-.03-.053-.113-.093-.298-.186"/></svg>
                     </a>
                     <a href="https://www.instagram.com/interiorsbycubitstime?igsh=MWhub2NjeDc0ZXJ0Zw==" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04 8.5.18 1.416.363 1.926a3.9 3.9 0 0 0 .923 1.417 3.9 3.9 0 0 0 1.417.923c.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.991.924-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.444-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.6c.282-.109.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
@@ -249,6 +263,57 @@
                 });
             });
         });
+
+        // Cart State & Logic
+        const cart = [];
+        const actionButtons = document.querySelectorAll('.shop-product-action');
+        const cartBar = document.getElementById('inquiry-cart');
+        const cartDetails = document.getElementById('cart-details');
+        const whatsappBtn = document.getElementById('whatsapp-inquire-btn');
+
+        actionButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const title = btn.getAttribute('data-title');
+                const price = parseInt(btn.getAttribute('data-price'), 10);
+                const sku = btn.getAttribute('data-sku');
+
+                const existingIndex = cart.findIndex(item => item.sku === sku);
+                if (existingIndex > -1) {
+                    cart.splice(existingIndex, 1);
+                    btn.classList.remove('selected');
+                    btn.textContent = 'Inquire Piece';
+                } else {
+                    cart.push({ title, price, sku });
+                    btn.classList.add('selected');
+                    btn.textContent = 'Selected ✓';
+                }
+
+                updateCartUI();
+            });
+        });
+
+        function updateCartUI() {
+            if (cart.length > 0) {
+                cartBar.classList.add('active');
+                
+                const itemNames = cart.map(item => item.title).join(', ');
+                const total = cart.reduce((sum, item) => sum + item.price, 0);
+                
+                cartDetails.textContent = `${cart.length} item(s) selected: ${itemNames} | Total: GH₵ ${total.toLocaleString()}`;
+                
+                // Build pre-filled message text
+                let msg = `Hello Interiors By Cubits Time,\n\nI would like to inquire about the following pieces:\n`;
+                cart.forEach(item => {
+                    msg += `- ${item.title} (${item.sku}) — GH₵ ${item.price.toLocaleString()}\n`;
+                });
+                msg += `\nTotal: GH₵ ${total.toLocaleString()}`;
+                
+                whatsappBtn.href = `https://wa.me/233500437993?text=${encodeURIComponent(msg)}`;
+            } else {
+                cartBar.classList.remove('active');
+            }
+        }
     </script>
 </body>
 </html>
