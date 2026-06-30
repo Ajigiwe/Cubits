@@ -12,7 +12,7 @@
 
     <!-- NAVIGATION HEADER -->
     <header class="nav-bar">
-        <a href="index.html" class="nav-logo" aria-label="Interiors By Cubits Time Home"><svg class="logo-svg" viewBox="0 0 100 100"><line x1="12" y1="12" x2="42" y2="12" /><line x1="58" y1="12" x2="88" y2="12" /><line x1="88" y1="12" x2="88" y2="88" /><line x1="88" y1="88" x2="12" y2="88" /><line x1="12" y1="88" x2="12" y2="48" /><line x1="22" y1="22" x2="38" y2="22" style="stroke-width: 3;" /><line x1="30" y1="22" x2="30" y2="34" style="stroke-width: 3;" /><polygon points="30,34 22,46 38,46" /><text x="58" y="74" text-anchor="middle">ICT</text></svg></a>
+        <a href="index.html" class="nav-logo" aria-label="Interiors By Cubits Time Home"><img src="images/logo (2).png" alt="Interiors By Cubits Time"></a>
         <button class="nav-toggle" aria-label="Toggle Navigation">
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
@@ -92,7 +92,7 @@
         <div class="container">
             <div class="site-footer-inner">
                 <div class="site-footer-brand">
-                    <span class="site-footer-logo"><em>ICT</em> Interiors</span>
+                    <span class="site-footer-logo"><img src="images/logo (2).png" alt="Interiors By Cubits Time"></span>
                     <p class="site-footer-tagline">Bespoke spatial ecosystems where structural form, natural light, and refined materials align in absolute harmony.</p>
                     <p class="site-footer-copy">&copy; 2026 Interiors By Cubits Time. Site by <a href="https://wa.me/233500437993" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(212,175,55,0.3);">GadVish</a></p>
                 </div>
@@ -158,6 +158,16 @@
                 document.body.classList.toggle('nav-open');
             });
         }
+
+        // Nav background on scroll
+        const navBar = document.querySelector('.nav-bar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 60) {
+                navBar.classList.add('scrolled');
+            } else {
+                navBar.classList.remove('scrolled');
+            }
+        }, { passive: true });
     </script>
 
 </body>
